@@ -5,4 +5,5 @@
 
 output "test" {
   value = "Hello World"
+  value1 = "This is Terraform"
 }
