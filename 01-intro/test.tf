@@ -4,6 +4,5 @@
 # terraform destroy (Not used in companies mostly) - Delete the resources which were been created so far by TF. However TF will not look for code to delete, it will delete created resources by TF.
 
 output "test" {
-  value = "Hello World"
-  value1 = "This is Terraform"
+  value = "Hello World, This is Terraform"
 }
