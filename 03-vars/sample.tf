@@ -11,9 +11,17 @@ output "fruit_name" {
 variable "fruits" {
   default = [ "apple", "mango", "banana" ]
 }
+#Access a list variable, List index starts from zero
+output "fruits_first" {
+  value = var.fruits[0]
+}
 
-output "fruits" {
-  value = var.fruits
+output "fruits_second" {
+  value = var.fruits[1]
+}
+
+output "fruits_third" {
+  value = var.fruits[2]
 }
 
 #Map Variable, Plain
@@ -23,9 +31,13 @@ variable "fruit_stock" {
     banana = 200
   }
 }
+#Access a map variable
+output "fruit_stock_apple" {
+  value = var.fruit_stock["apple"]
+}
 
-output "fruit_stock" {
-  value = var.fruit_stock
+output "fruit_stock_banana" {
+  value = var.fruit_stock["banana"]
 }
 
 #Map Variable, Map of Maps
@@ -45,3 +57,4 @@ variable "fruit_stock_with_price" {
 output "fruit_stock_with_price" {
   value = var.fruit_stock_with_price
 }
+
