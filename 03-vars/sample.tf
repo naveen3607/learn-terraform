@@ -55,10 +55,10 @@ variable "fruit_stock_with_price" {
 }
 
 output "fruit_stock_with_price_apple" {
-  value = var.fruit_stock_with_price["apple"].stock
+  value = var.fruit_stock_with_price["apple"].price
 }
 
 output "fruit_stock_with_price_banana" {
-  value = var.fruit_stock_with_price["banana"].stock
+  value = var.fruit_stock_with_price["banana"].price
 }
 
