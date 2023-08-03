@@ -1,7 +1,18 @@
+variable "ami" {
+  default = "ami-03265a0778a880afb"
+}
 
+variable "instance_type" {
+  default = "t2.micro"
+}
 
+variable "vpc_security_group_ids" {
+  default = "sg-094473d55ab4bd85d"
+}
 
-
+variable "zone_id" {
+  default = "Z06537442IUXZV0J4PKFE"
+}
 
 resource "aws_instance" "frontend" {
   ami           = "ami-03265a0778a880afb"
