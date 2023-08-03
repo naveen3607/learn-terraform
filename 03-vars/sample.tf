@@ -62,3 +62,17 @@ output "fruit_stock_with_price_banana" {
   value = var.fruit_stock_with_price["banana"].price
 }
 
+#When a variable needs to be used in combination of data types
+variable "fruit_details" {
+  default = {
+    apple = {
+      stock = 100
+      type = "Washington"
+      for_sale = true
+    }
+  }
+}
+
+output "fruit_details" {
+  value = "Apple Stock = ${var.fruit_details["apple"].stock} , Apple Type = ${var.fruit_details["apple"].type}, Apple Sale Status = ${var.fruit_details["apple"].for_sale}"
+}
