@@ -15,4 +15,9 @@ resource "aws_instance" "instance" {
   }
 }
 
+resource "aws_security_group" "allow_tls" {
+  count = length(var.components)
+  Name = element(var.components, count.index)
+}
+
 #Count is least preferred loop in Terraform
