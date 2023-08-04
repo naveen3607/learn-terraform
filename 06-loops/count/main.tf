@@ -14,3 +14,5 @@ resource "aws_instance" "instance" {
     Name = element(var.components, count.index)
   }
 }
+
+#Count is least preferred loop in Terraform
