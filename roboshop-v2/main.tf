@@ -15,17 +15,19 @@ variable "zone_id" {
 }
 
 variable "components" {
-  frontend = {}
-  mongodb = {}
-  catalogue = {}
-  redis = {}
-  user = {}
-  cart = {}
-  mysql = {}
-  shipping = {}
-  rabbitmq = {}
-  payment = {}
-  dispatch = {}
+  default = {
+    frontend  = {}
+    mongodb   = {}
+    catalogue = {}
+    redis     = {}
+    user      = {}
+    cart      = {}
+    mysql     = {}
+    shipping  = {}
+    rabbitmq  = {}
+    payment   = {}
+    dispatch  = {}
+  }
 }
 
 resource "aws_instance" "instance" {
