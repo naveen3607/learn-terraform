@@ -13,10 +13,10 @@ variable "instance_type" {
 variable "name" {
   default = {
     frontend = {
-      name = "frontend"
+      name = "frontend-dev"
     }
     catalogue = {
-      name = "catalogue"
+      name = "catalogue-dev"
     }
   }
 }
