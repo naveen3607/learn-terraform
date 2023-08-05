@@ -13,37 +13,37 @@ variable "instance_type" {
 variable "components" {
   default = {
     frontend = {
-      name = "frontend-dev"
+      name = "frontend"
     }
     catalogue = {
-      name = "catalogue-dev"
+      name = "catalogue"
     }
     mongodb = {
-      name = "mongodb-dev"
+      name = "mongodb"
     }
     redis = {
-      name = "redis-dev"
+      name = "redis"
     }
     user = {
-      name = "user-dev"
+      name = "user"
     }
     cart = {
-      name = "cart-dev"
+      name = "cart"
     }
     mysql = {
-      name = "mysql-dev"
+      name = "mysql"
     }
     shipping = {
-      name = "shipping-dev"
+      name = "shipping"
     }
     rabbitmq = {
-      name = "rabbitmq-dev"
+      name = "rabbitmq"
     }
     payment = {
-      name = "payment-dev"
+      name = "payment"
     }
     dispatch = {
-      name = "dispatch-dev"
+      name = "dispatch"
     }
   }
 }
