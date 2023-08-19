@@ -21,6 +21,6 @@ variable "vpc" {
   }
 }
 
-output "vpc" {
-  value = [ for i in [ for k,v in var.vpc["main"]["subnets"] : v ] : i ]
+output "all_subnets" {
+  value = [ for k,v in merge(var.vpc["main"]["subnets"]) : v ]
 }
